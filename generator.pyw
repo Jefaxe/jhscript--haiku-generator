@@ -5,7 +5,6 @@ import random
 import sys
 import urllib.request
 import libs.jeflib as jb
-import argparse
 import threading
 
 def downloadHaikus():
