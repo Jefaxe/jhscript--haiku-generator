@@ -15,12 +15,23 @@ def downloadHaikus():
                 jb.downloadFile("https://raw.githubusercontent.com/Jefaxe/jhscript--haiku-generator/main/haikus/poems/haiku-"+str(x)+".txt","haikus/poems/haiku-"+str(x)+".txt")
 def main():
     #create list of first-liners
-    haiku_list = os.listdir("haikus/poems")
+    def getHaikuList():
+        haiku_list = os.listdir("haikus/poems")
+        try:
+            haiku_list.remove(".DS_Store") #mac finder folder configeration file. Always present on MACOSX.
+        except ValueError:
+            pass  
+        try:
+            haiku_list.remove("desktop.ini") #windows folder configeration file. Only present if you make changes to the folder settings. Windows only.
+        except ValueError:
+            pass
+        return haiku_list
+    haiku_list=getHaikuList()
     try:
         poem = random.choice(haiku_list)
     except IndexError:
         downloadHaikus()
-        haiku_list = os.listdir("haikus/poems")
+        haiku_list=getHaikuList()
         poem = random.choice(haiku_list)
     with open("haikus/poems/"+poem) as haiku_line: #for line one
         line_1 = haiku_line.readlines()[0]
