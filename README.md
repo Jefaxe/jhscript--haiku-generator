@@ -1,10 +1,7 @@
-# jhscript: haiku-generator
-A short script to create a random haiku form a set of haikus. Feel free to add your own locally, or submit a pull request.
+# JHScript: Haiku-Generator (complex)
 
-
-Haikus MUST be named haiku [number] and the max number is set in max.txt.
-The script will then download all the files form "haiku-1" to "haiku-[contents of max.txt]"
-  
-  
- Saved haikus are saved to haikus/export/[haiku-name].txt locally.
+A much more complex version of the initial https://github.com/Jefaxe/jhscript--haiku-generator/tree/basic
  
+This version will be able to create its own haikus, when finnished.
+
+ALPHA.
