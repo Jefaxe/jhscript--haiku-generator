@@ -1,0 +1,8 @@
+{
+	"pronouns":{
+		"-s":["I","They","We"],
+		"+s":["He","She","Kyran"]
+	},
+	"nouns": ["grass","poo","rivers"],
+	"adjectives": ["love","hate","destroy"]
+}
