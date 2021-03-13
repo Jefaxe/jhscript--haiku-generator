@@ -1,5 +1,5 @@
 # JHScript: Haiku-Generator
-A short script to create a random haiku form a set of haikus. Feel free to add your own locally, or submit a pull request.
+A short script to create a random haiku from a set of haikus. Feel free to add your own locally, or submit a pull request.
 
 
 Haikus MUST be named haiku [number] and the max number is set in max.txt.
