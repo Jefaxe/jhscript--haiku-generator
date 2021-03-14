@@ -9,7 +9,7 @@ import threading
 
 def downloadHaikus():
     if jb.connected():
-        max_number = urllib.request.urlopen("https://raw.githubusercontent.com/Jefaxe/jhscript--haiku-generator/main/haikus/poems/max.txt")
+        max_number = urllib.request.urlopen("https://raw.githubusercontent.com/Jefaxe/jhscript--haiku-generator/main/haikus/maxPoems.txt")
         for x in range(1,int(max_number.read())+1):
             if not os.path.exists("haikus/poems/haiku-"+str(x)):
                 jb.downloadFile("https://raw.githubusercontent.com/Jefaxe/jhscript--haiku-generator/main/haikus/poems/haiku-"+str(x)+".txt","haikus/poems/haiku-"+str(x)+".txt")
